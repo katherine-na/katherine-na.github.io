@@ -9,38 +9,35 @@ body {
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
+  padding: 4px;
 }
 
 .nav-container a {
-  color: rgb(205, 203, 203);
+  color: #c4c4c8;
   text-decoration: none;
   font-size: 8px;
   margin-left: 25px;
+}
+
+.nav-container a:hover {
+  color: white;
 }
 
 .nav-container li {
   list-style: none;
 }
 
-.bag-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.icon {
-  width: 10px;
-  height: 10px;
-}
-
 .second-container {
   display: flex;
   justify-content: space-evenly;
+  padding: 5px;
 }
 
 .title-nav a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .second-nav a {
@@ -50,8 +47,13 @@ body {
   color: rgb(92, 91, 91);
 }
 
+.second-nav a:hover {
+  color: #0071e3;
+}
+
 .second-nav a:first-child {
   color: rgb(170, 169, 169);
+  cursor: default;
 }
 
 .second-nav a:last-child {
@@ -62,6 +64,10 @@ body {
   color: white;
 }
 
+.second-nav a:last-child:hover {
+  background-color: #097df0;
+}
+
 .cover-title {
   display: flex;
   justify-content: center;
@@ -70,6 +76,7 @@ body {
 
 .cover-title h1 {
   font-size: 40px;
+  line-height: 45px;
   font-weight: 500;
   margin: 0;
   margin-top: 80px;
@@ -107,6 +114,8 @@ body {
 
 .text p {
   text-align: center;
+  font-weight: 400;
+  line-height: 1.381;
   font-size: 15px;
 }
 
@@ -116,7 +125,7 @@ body {
 }
 
 .accessories img {
-  width: 350px;
+  width: 320px;
   margin-top: 70px;
   margin-bottom: 40px;
 }
@@ -129,9 +138,49 @@ body {
 .icon-apps p {
   font-size: 8px;
   text-align: center;
+  margin: 0;
 }
 
 .icon {
   width: 35px;
   height: 35px;
+}
+
+.both {
+  margin-left: 30px;
+}
+
+.last-text {
+  display: flex;
+  justify-content: center;
+}
+
+.last-text p {
+  margin-top: 70px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.last-text a {
+  color: #0071e3;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}
+
+.end a {
+  color: #0071e3;
+  font-size: 10px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+@media all and (min-width: 1150px) {
+  .nav-container {
+    flex-direction: column;
+  }
 }
