@@ -179,8 +179,20 @@ body {
   margin-bottom: 50px;
 }
 
-@media all and (min-width: 1150px) {
+@media all and (max-width: 425px) {
   .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .second-container {
     flex-direction: column;
+  }
+
+  .second-nav {
+    flex-direction: column;
+  }
+
+  .icon-apps {
+    flex-wrap: wrap;
   }
 }
