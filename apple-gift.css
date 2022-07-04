@@ -4,30 +4,31 @@ body {
     "Helvetica", "Arial", sans-serif;
 }
 
-.toggle {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+.phone-menu {
+  color: white;
+  display: none;
 }
 
-.toggle a {
-  color: grey;
-  display: none;
+.fa-bars,
+.fa-apple,
+.fa-bag-shopping {
+  font-size: 18px;
 }
 
 .nav-container {
   margin: 0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
-  padding: 5px;
+  padding: 15px;
 }
 
 .nav-container a {
   color: #c4c4c8;
   text-decoration: none;
-  font-size: 8px;
-  margin-left: 25px;
+  font-size: 13px;
+  margin-left: 52px;
 }
 
 .nav-container a:hover {
@@ -41,14 +42,15 @@ body {
 .second-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 5px;
+  padding: 15px;
 }
 
 .title-nav a {
   text-decoration: none;
   color: black;
-  font-size: 13px;
+  font-size: 22px;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .second-nav a {
@@ -198,14 +200,14 @@ body {
   margin-bottom: 50px;
 }
 
-@media all and (max-width: 425px) {
-  /* .toggle {
+@media all and (max-width: 768px) {
+  .phone-menu {
     display: block;
-  } */
+  }
 
   .nav-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .title-nav {
@@ -228,5 +230,9 @@ body {
 
   .last-text {
     padding: 0px 40px;
+  }
+
+  .nav-none {
+    display: none;
   }
 }
