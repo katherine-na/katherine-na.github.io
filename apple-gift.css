@@ -12,7 +12,7 @@ body {
 .fa-bars,
 .fa-apple,
 .fa-bag-shopping {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .nav-container {
@@ -21,7 +21,13 @@ body {
   flex-direction: row;
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
-  padding: 15px;
+  padding: 14px;
+}
+
+.nav-none {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-container a {
@@ -40,12 +46,18 @@ body {
 }
 
 .second-container {
-  display: flex;
+  position: relative;
   justify-content: space-evenly;
   padding: 15px;
 }
 
-.title-nav a {
+.subtitle {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.subtitle a {
   text-decoration: none;
   color: black;
   font-size: 22px;
@@ -53,38 +65,17 @@ body {
   opacity: 0.8;
 }
 
-.second-nav a {
-  text-decoration: none;
-  margin-left: 10px;
-  font-size: 8px;
-  color: rgb(92, 91, 91);
-}
-
-.second-nav a:hover {
-  color: #0071e3;
-}
-
-.second-nav a:first-child {
-  color: rgb(170, 169, 169);
-  cursor: default;
-}
-
-.second-nav a:last-child {
-  border-radius: 20px;
-  font-weight: 300;
-  padding: 2px 5px;
-  background: #0071e3;
-  color: white;
-}
-
-.second-nav a:last-child:hover {
-  background-color: #097df0;
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .cover-title {
   display: flex;
   justify-content: center;
-  border-top: 0.5px solid rgb(164, 162, 162);
 }
 
 .cover-title h1 {
@@ -200,7 +191,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .phone-menu {
     display: block;
   }
@@ -232,7 +223,33 @@ body {
     padding: 0px 40px;
   }
 
-  .nav-none {
+  .nav-responsive {
     display: none;
   }
+}
+
+/* secondary navigation */
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.quick-links a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 13px;
+  color: rgb(67, 67, 67);
+}
+
+.quick-links a.buy {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  background: #0071e3;
+  padding: 6px 14px;
+  border-radius: 40px;
 }
