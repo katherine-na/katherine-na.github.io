@@ -4,17 +4,6 @@ body {
     "Helvetica", "Arial", sans-serif;
 }
 
-.phone-menu {
-  color: white;
-  display: none;
-}
-
-.fa-bars,
-.fa-apple,
-.fa-bag-shopping {
-  font-size: 19px;
-}
-
 .nav-container {
   margin: 0;
   display: flex;
@@ -22,12 +11,6 @@ body {
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
   padding: 14px;
-}
-
-.nav-none {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .nav-container a {
@@ -45,10 +28,21 @@ body {
   list-style: none;
 }
 
-.second-container {
-  position: relative;
-  justify-content: space-evenly;
-  padding: 15px;
+.phone-menu {
+  color: white;
+  display: none;
+}
+
+.fa-bars,
+.fa-apple,
+.fa-bag-shopping {
+  font-size: 19px;
+}
+
+.nav-responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .subtitle {
@@ -73,163 +67,6 @@ body {
   border-bottom: 1px solid #d6d6d6;
 }
 
-.cover-title {
-  display: flex;
-  justify-content: center;
-}
-
-.cover-title h1 {
-  font-size: 40px;
-  line-height: 45px;
-  font-weight: 500;
-  margin: 0;
-  margin-top: 80px;
-}
-
-.second-buy {
-  display: flex;
-  justify-content: center;
-}
-
-.second-buy a {
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 10px;
-  color: white;
-  background: #0071e3;
-  padding: 10px 20px;
-  border-radius: 40px;
-  margin: 30px;
-}
-
-.cover {
-  display: flex;
-  justify-content: center;
-}
-
-.cover-img {
-  width: 85%;
-}
-
-.text {
-  display: flex;
-  justify-content: center;
-}
-
-.text p {
-  text-align: center;
-  font-weight: 400;
-  line-height: 1.381;
-  font-size: 15px;
-}
-
-.accessories {
-  display: flex;
-  justify-content: center;
-}
-
-.accessories img {
-  width: 320px;
-  margin-top: 70px;
-  margin-bottom: 40px;
-}
-
-.icon-apps {
-  display: flex;
-  justify-content: center;
-}
-
-.icon-apps p {
-  font-size: 8px;
-  text-align: center;
-  margin: 0;
-}
-
-.icon-apps .both:first-child {
-  margin: 0;
-}
-
-.icon {
-  width: 35px;
-  height: 35px;
-}
-
-.both {
-  margin-left: 30px;
-}
-
-.both:first-child {
-  margin: 0;
-}
-
-.last-text {
-  display: flex;
-  justify-content: center;
-}
-
-.last-text p {
-  margin-top: 70px;
-  font-size: 10px;
-  text-align: center;
-  font-weight: 300;
-}
-
-.last-text a {
-  color: #0071e3;
-}
-
-.end {
-  display: flex;
-  justify-content: center;
-}
-
-.end a {
-  color: #0071e3;
-  font-size: 10px;
-  font-weight: 300;
-  text-decoration: none;
-  margin-bottom: 50px;
-}
-
-@media all and (max-width: 1024px) {
-  .phone-menu {
-    display: block;
-  }
-
-  .nav-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .title-nav {
-    padding: 10px 10px 5px 10px;
-  }
-
-  .second-container {
-    flex-direction: column;
-  }
-
-  .second-nav {
-    flex-direction: column;
-  }
-
-  .icon-apps {
-    flex-wrap: wrap;
-    margin: 0%;
-    padding: 5px;
-  }
-
-  .last-text {
-    padding: 0px 40px;
-  }
-
-  .nav-responsive {
-    display: none;
-  }
-}
-
-/* secondary navigation */
-
 .quick-links {
   display: flex;
   justify-content: center;
@@ -252,4 +89,149 @@ body {
   background: #0071e3;
   padding: 6px 14px;
   border-radius: 40px;
+}
+
+.cards-intro-title {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-intro-title h1 {
+  font-size: 65px;
+  line-height: 1.0625;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 130px;
+}
+
+.cards-intro-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-intro-btn a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+  background: #0071e3;
+  padding: 20px 35px;
+  border-radius: 40px;
+  margin: 30px;
+}
+
+.cards-intro-gift {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-intro-img {
+  width: 85%;
+}
+
+.cards-intro-txt {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-intro-txt p {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.381;
+  font-size: 21px;
+}
+
+.accessories-img {
+  display: flex;
+  justify-content: center;
+}
+
+.accessories-img img {
+  width: 465px;
+  margin-top: 70px;
+  margin-bottom: 63px;
+}
+
+.apple-products {
+  display: flex;
+  justify-content: center;
+}
+
+.apple-products p {
+  font-size: 8px;
+  text-align: center;
+  margin: 0;
+}
+
+.product-app {
+  width: 51px;
+  height: 51px;
+}
+
+.product {
+  margin-left: 40px;
+}
+
+.product:first-child {
+  margin: 0;
+}
+
+.gift-cards-text {
+  display: flex;
+  justify-content: center;
+}
+
+.gift-cards-text p {
+  margin-top: 70px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+
+.gift-cards-text a {
+  color: #0071e3;
+}
+
+.gift-cards-learn-more {
+  display: flex;
+  justify-content: center;
+}
+
+.gift-cards-learn-more a {
+  color: #0071e3;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 1024px) {
+  .phone-menu {
+    display: block;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subtitle {
+    padding: 10px 10px 5px 10px;
+  }
+
+  .apple-products {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 5px;
+  }
+
+  .gift-cards-text {
+    padding: 0px 40px;
+  }
+
+  .nav-responsive {
+    display: none;
+  }
 }
